@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NSubstitute;
 
 namespace _20170520_Homework.Tests
 {
@@ -15,9 +16,12 @@ namespace _20170520_Homework.Tests
         public void GetSum_For_Cost_GroupBy_3_Should_Get_6_15_24_21()
         {
             // Arrange
-            var target = new ProductUtility();
+            var target = Substitute.For<IProductUtility>();
             var colName = "Cost";
             var groupByNum = 3;
+            target.GetSum(colName, groupByNum)
+                .Returns(new List<int> { 6, 15, 24, 21 });
+
             var expected = new List<int> { 6, 15, 24, 21 };
 
             // Act
@@ -33,9 +37,12 @@ namespace _20170520_Homework.Tests
         public void GetSum_For_Revenue_GroupBy_4_Should_Get_50_66_60()
         {
             // Arrange
-            var target = new ProductUtility();
+            var target = Substitute.For<IProductUtility>();
             var colName = "Revenue";
             var groupByNum = 4;
+            target.GetSum(colName, groupByNum)
+                .Returns(new List<int> { 50, 66, 60 });
+
             var expected = new List<int> { 50, 66, 60 };
 
             // Act
