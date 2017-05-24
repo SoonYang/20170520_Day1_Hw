@@ -8,7 +8,7 @@ namespace _20170520_Homework
 {
     public class OrderUtility : IOrderUtility
     {
-        public IEnumerable<int> GetSum(string colName, int groupByNum)
+        public ICollection<int> GetSum(string colName, int groupByNum)
         {
             throw new NotImplementedException();
         }

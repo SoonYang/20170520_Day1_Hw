@@ -13,6 +13,6 @@ namespace _20170520_Homework
         /// <param name="colName">欄位名稱</param>
         /// <param name="groupByNum">每幾筆資料統計為一組</param>
         /// <returns></returns>
-        IEnumerable<int> GetSum(string colName, int groupByNum);
+        ICollection<int> GetSum(string colName, int groupByNum);
     }
 }
