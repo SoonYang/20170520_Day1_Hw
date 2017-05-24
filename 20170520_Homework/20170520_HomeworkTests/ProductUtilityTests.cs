@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 namespace _20170520_Homework.Tests
 {
     [TestClass()]
-    public class OrderUtilityTests
+    public class ProductUtilityTests
     {
         [TestMethod()]
         public void GetSum_For_Cost_GroupBy_3_Should_Get_6_15_24_21()
         {
             // Arrange
-            var target = new OrderUtility();
+            var target = new ProductUtility();
             var colName = "Cost";
             var groupByNum = 3;
             var expected = new List<int> { 6, 15, 24, 21 };
@@ -33,7 +33,7 @@ namespace _20170520_Homework.Tests
         public void GetSum_For_Revenue_GroupBy_4_Should_Get_50_66_60()
         {
             // Arrange
-            var target = new OrderUtility();
+            var target = new ProductUtility();
             var colName = "Revenue";
             var groupByNum = 4;
             var expected = new List<int> { 50, 66, 60 };

@@ -3,9 +3,9 @@
 namespace _20170520_Homework
 {
     /// <summary>
-    /// 訂單工具
+    /// 商品工具
     /// </summary>
-    public interface IOrderUtility
+    public interface IProductUtility
     {
         /// <summary>
         /// 取得指定欄位總和

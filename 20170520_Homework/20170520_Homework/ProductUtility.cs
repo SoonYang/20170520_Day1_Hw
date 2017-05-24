@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _20170520_Homework
 {
-    public class OrderUtility : IOrderUtility
+    public class ProductUtility : IProductUtility
     {
         public ICollection<int> GetSum(string colName, int groupByNum)
         {

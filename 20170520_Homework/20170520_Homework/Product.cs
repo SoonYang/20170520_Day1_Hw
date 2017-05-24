@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace _20170520_Homework
 {
     /// <summary>
-    /// 訂單
+    /// 商品
     /// </summary>
-    public class Order
+    public class Product
     {
         /// <summary>
-        /// 訂單 ID
+        /// 商品 ID
         /// </summary>
         public int Id { get; set; }
 
