@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IProductUtility.cs" />
+    <Compile Include="IStatisticUtility.cs" />
     <Compile Include="Product.cs" />
-    <Compile Include="ProductUtility.cs" />
+    <Compile Include="StatisticUtility.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
